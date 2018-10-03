@@ -21,7 +21,14 @@ public class BankAccount {
   }
   public boolean deposit(int depositAmount) {
     if (depositAmount > 0) {
-      a += depositAmount;
+      b += depositAmount;
+      return true;
+    }
+    return false;
+  }
+  public boolean withdraw(int withdrawalAmount) {
+    if ((b - withdrawalAmount) >= 0) {
+      b -= withdrawalAmount;
       return true;
     }
     return false;
