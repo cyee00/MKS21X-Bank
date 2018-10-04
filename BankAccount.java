@@ -38,4 +38,5 @@ public class BankAccount {
   }
   public boolean transferTo(BankAccount other, double amount, String password) {
     return this.authenticate(password) && this.withdraw(amount) && other.deposit(amount);
+  }
 }
