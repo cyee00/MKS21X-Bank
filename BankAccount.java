@@ -19,14 +19,14 @@ public class BankAccount {
   public String toString() {
     return a + "\t" + b;
   }
-  public boolean deposit(int depositAmount) {
+  public boolean deposit(double depositAmount) {
     if (depositAmount > 0) {
       b += depositAmount;
       return true;
     }
     return false;
   }
-  public boolean withdraw(int withdrawalAmount) {
+  public boolean withdraw(double withdrawalAmount) {
     if ((b - withdrawalAmount) >= 0) {
       b -= withdrawalAmount;
       return true;
